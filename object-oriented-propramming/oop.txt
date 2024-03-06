@@ -1,0 +1,59 @@
+OBJECT-ORIENTED PROGRAMMING
+    1. Object-Oriented Programming
+        > salah satu paradigma dalam pemrograman yang berfokus pada pembuatan 
+          sebuah objek dan interaksi dengan objek-objek tersebut.
+        > Di OOP, objek merupakan sebuah entitas yang terdiri dari dua hal, yakni properties dan methods.
+          - Properti merupakan nilai di dalam objek yang menyimpan informasi tentang objek tersebut.
+          - Method merupakan fungsi yang menggambarkan aksi yang dapat dilakukan oleh objek tersebut.
+    2. Constructor Function
+        > Javascript merupakan protoype-base language bukan class-base Programming language. dan konsep-konsep
+         OOP yang memanfaatkan class seperti pewarisan dapat dilakukan dengan memanfaatkan prototype.
+        > Object Blueprint (class) 
+        > Constructor function memiliki internal property bernama prototype. Properti ini digunakan untuk mendefinisikan 
+          method-method yang akan dimiliki oleh objek yang dibuat. Alasan method perlu didefinisikan di dalam prototype
+          agar mudah untuk diwarisi ketika melakukan pewarisan.
+        > Syarat Constructor Function :
+          - Penamaan function berupa huruf kapital
+          - memanfaatkan keyword this yang bernilai object(instance) dirinya sendiri
+          - agar fungsi mengembalikan sebuah objek, Anda harus memanggilnya dengan menambahkan keyword new. ex : const car1 = new Car("Toyota", "Silver", 200, "to-1");
+          - hanya dapat dibuat dengan regular function.
+        > Ada 2 cara dalam membuat function Constructor/ object Blueprint yaitu :
+          1. Keyword function
+          2. menggunakan keyword class.
+    3. Properti dan Method pada class(function constructor dalam JavaScript)
+        > Properti. ex :  this.brand = brand;
+           - data property :  properti yang langsung menampung sebuah nilai di dalam sebuah objek.
+           - accessor property : properti yang dikontrol oleh sebuah getter dan setter.
+              1. get : Nilai yang didapatkan dari properti tersebut dikontrol oleh method ini
+              2. set : menetapkan nilai tersebut dikontrol oleh method ini
+           - Jika terdapat properti yang tidak ingin diganti bisa menggunakan method getter dan setter 
+        > Method
+          - Method di dalam class hanya bisa dijalankan melalui instance dari class tersebut.
+          - Agar kode di dalam constructor lebih rapi, kita bisa membuat method yang digunakan internal
+            yang menampung kode random tersebut. Biasanya method yang hanya digunakan secara internal disebut dengan private
+            dan namanya diawali dengan tanda underscore.
+        > Member visibility
+          -  properti dan method bersifat private, ketika kita ingin properti atau method tersebut hanya digunakan dalam cakupan kode di dalam class saja (penggunaan internal). 
+          - yaitu dengan tanda # di awal penamaan properti atau method dalam class.
+    4. Pewarisan 
+        > Dengan konsep inheritance, kita bisa mewariskan sifat-sifat yang berada di dalam sebuah class ke class lain. 
+          Konsep inheritance cocok ketika kita ingin membuat objek yang mirip dan memiliki sedikit perbedaan seperti kasus yang kita hadapi.
+          - cara mewarisi dengan keyword extends dibagi menjadi superclass dan subclass
+        > Operator instanceof : cara mengetahui jenis objek  adalah dengan mengecek rantai prototype-nya.
+          ex : operand1 instanceof operand2
+             - operand1: merupakan objek yang ingin dites prototype-nya.
+             - operand2: merupakan constructor function atau class. 
+    5. Overriding
+         > fitur yang memperbolehkan subclass mendefinisikan implementasinya sendiri pada sebuah method yang sebenarnya sudah didefinisikan pada superclass-nya.
+         > Constructor Overriding
+            - method super() : memanggil constructor superclass
+         > Method Overriding
+    6. Object Composition
+    7. Built-in Class
+         1. Date 
+         2. Object
+         3. Array
+         4. Math
+         5. String
+         6. Number
+
