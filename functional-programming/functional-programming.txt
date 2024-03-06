@@ -1,0 +1,58 @@
+FUNCTIONAL PROGRAMMING
+    1. Paradigma Functional Programming
+        > Gaya Imperatif
+        > Gaya deklaratif
+    2. Konsep-Konsep Functional Programming
+        1. Pure Function 
+            - fungsi yang tidak boleh bergantung terhadap nilai yang berada di luar fungsi atau parameternya
+            - dilarang keras untuk mengubah nilai yang berada di luar baik secara sengaja atau tidak sengaja. 
+            - Pure function tidak boleh menimbulkan efek samping (no side effect) ketika digunakan.
+            - Gunakan destructuring object agar menjadi pure function
+            - 3 konsep mengetahui apakah fungsi sudah pure/belum :
+                1. Mengembalikan nilai yang sama bila inputannya (nilai parameter) sama.
+                2. Hanya bergantung pada argumen yang diberikan.
+                3. Tidak menimbulkan efek samping.
+        2. Immutability
+            - Immutable berarti sebuah objek tidak boleh diubah setelah objek tersebut dibuat.
+              Kontras dengan mutable yang artinya objek boleh diubah setelah objek tersebut dibuat.
+        3. Recursive
+            - Teknik pada sebuah function yang memanggil dirinya sendiri.
+            - bisa menggantikan operasi iterasi dengan rekursi.
+            - rekursi kita dapat membuat dan mengolah data structures seperti Tree dan Array.
+        4. High-order Function
+            -  fungsi yang dapat menerima fungsi lainnya pada argumen; mengembalikan sebuah fungsi; atau bahkan keduanya. 
+            - Teknik Higher-Order Function biasanya digunakan untuk:
+               1. Mengabstraksi atau mengisolasi sebuah aksi, event, atau menangani alur asynchronous menggunakan callback, promise, dan lainnya.
+               2. Membuat utilities yang dapat digunakan di berbagai tipe data.
+               3. Membuat teknik currying atau function composition.
+            - arr.map() merupakan salaj satu contohnya, ia menerima satu buah argumen yang merupakan sebuah function.
+    3. Reusable Function 
+        > beberapa Higher-Order Function yang dimiliki array :
+            1. arr.map()
+              - merupakan looping pada array 
+              - Fungsi ini dapat dipanggil dari sebuah data bertipe array dan menerima satu buah callback function.
+              - Fungsi map akan mengembalikan array baru
+            2. arr.filter()
+              - menghilangkan beberapa item di array
+            3. arr.reduce(). ex : arr.reduce(callback(accumulator, currentValue, [currentIndex], [array]), [initialValue])
+              - hanya mengembalikan output satu nilai saja.
+              - Callback function dari fungsi ini dapat diolah untuk manipulasi data currentValue dan menyimpannya pada accumulator
+              - fungsi reduce juga memiliki nilai awal yang dapat didefinisikan pada bagian initialValue.
+            4. arr.some()
+              - akan menghasilkan nilai bolean              
+              - Nilai yang dihasilkan didasarkan pada pernyataan apakah ada setidaknya satu dari deretan nilai dalam array tersebut
+                lolos berdasarkan kriteria yang kita tuliskan dalam callback function.
+            5. arr.find() ex : arr.find(callback(element, [index], [array]), [thisArg]);
+              - Mirip dengan array.some(), array.find() sesuai namanya digunakan untuk mencari apakah di dalam deretan nilai terdapat
+                nilai yang sesuai dengan kriteria yang kita definisikan pada callback function. 
+              - akan menghasilkan satu nilai dari elemen yang pertama kali ditemukan berdasarkan kriteria tertentu dan
+                akan menghasilkan nilai undefine bila tidak ada kriteria yang terpenuhi pada item array.
+            6. arr.sort([compareFunction])
+               - pengurutan nilai dari sebuah deretan nilai
+               - fungsi sort akan mengubah semua nilai dalam deretan menjadi bentuk string dan mengurutkannya secara ascending.
+            7. arr.every()
+               - mengecheck apakah semua nilai dari sebuah array sesuai dengan kriteria yang didefinisikan. 
+               - Kembalian dari array.every() adalah nilai Boolean.
+            8. forEach()
+               - dapat mengubah sintaks perulangan berdasarkan jumlah array
+               - fungsi ini secara harfiah hanya berfungsi untuk memanggil fungsi callback-nya saja
