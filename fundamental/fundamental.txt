@@ -1,0 +1,46 @@
+FUNDAMENTAL JAVASCRIPT
+      - Hal yang dipelajari :
+      1. Statement dan expression
+      2. Comment
+      3. Variabel
+      4. Tipe Data 
+          - Number 
+          - String
+          - Boolean
+          - Null
+          - Undefined
+          - BigInt
+      5. Operator 
+          - Unary Operator
+            ex : typeof car atau delete car.color
+          - Binary Operator
+             1. Aritmatika (Arithmetic)
+                - pertambahan / +
+                - Pengurangan / -
+                - Perkalian / *
+                - Pembagian / :
+                - Modulus / %
+             2. Penugasan (Asignment)
+                - = 
+                - += ex: let x = 5; x += 2 yaitu sama dengan x = x + 2 = 10
+                - -=
+                - *=
+             3. Komparasi (Comparasion)
+                - > dan >=
+                - < dan <=
+                - == dan !=
+                - === dan !==
+             4. Logika (Logical)
+                - and && 
+                - or || 
+                - not !
+          - Ternary Operator
+              ex : ... ? ... : ...
+      6. Control Flow
+          1. Percabangan
+            - if else
+            - switch case. wajib pakai break disetiap setelah case
+          2. Perulangan
+            - for
+            - while
+            - do while 

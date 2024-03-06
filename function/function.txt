@@ -1,0 +1,36 @@
+FUNCTION
+    1. Function (reusable)
+       > Parameter Function
+        - Bisa menggunakan destructuring object jika parameter berupa objek
+        - Default Parameter : Nilai default pada parameter ketika tidak menuliskan argument  
+        - Named Parameter with Spread Operator. ex : ({ param1 = 1, param2 } = {})
+        - Rest Parameter : Jika kita membuat sebuah fungsi dengan parameter yang tidak pasti. (...parameter)
+        - Memiliki this
+        - new keyword
+       > Argument Function
+    2. Function Expression 
+       > menghasilkan sebuah nilai dan diisi kedalam variabel
+       > Dapat menjadi input dari function lain dengan Callback 
+    3. Rest Parameter
+       > Rest parameter juga dituliskan menggunakan three consecutive dots (...)
+          - membuat sebuah fungsi dengan parameter yang tidak pasti.
+          - Rest parameter hanya berlaku diakhir parameter
+    4. Arrow Function (ES6)
+       > Sama seperti function biasa namun lebih sederhana
+          - Default Parameter 
+          - Named Parameter with Spread Operator
+          - Rest Parameter
+          - tidak memiliki "this"
+    5. Variabel Scope
+        - Global Scope : bisa diakses disemua 
+        - Local Scope : hanya bisa diakses di dalam function
+    6. Closure (lexical scope)
+    5. Perbedaan Arrow dan Regular Function
+       - syntax
+       - Object argument dan this
+       - new keyword
+    6. Predefined Function
+       1. isFinite : memeriksa apakah bernilai terbatas/ tak terbatas
+       2. isNaN : memeriksa apakah suatu nilai bernilai NaN atau bukan
+       3. parseFloat : Konversi dari suatu nilai ke nilai desimal
+       4. parseInt : Konversi dari suatu nilai ke bilangan bulat

@@ -1,0 +1,50 @@
+STRUKTUR DATA
+      1. Object {} : mengelompokan nilai melalui properti
+         > mengakses object dengan obj.properti atau obj["hello world"] jika key yang memiliki spasi/karakter khusus
+      2. Array [] : : mengelompokan nilai yang tersusun dengan index
+         > mengakses arr dengan arr[index]
+         > Looping pada arr bisa dengan :
+            - for of
+            - forEach
+         > Method Array
+            - arr.push("el") : menambahkan elemen baru diakhir
+            - arr.pop() : mengeluarkan elemen akhir
+            - arr.shift() : mengeluarkan elemen pertama
+            - arr.unsh ift("el") : menambahkan elemen pertama
+            - arr.splice(1, 0, "el") : index yang dituju, berapa elemen yang di hapus, "menambahkan el apa"
+      3. Map : sama seperti obj, tetapi key bisa berupa dengan apapun
+         > Method Map
+            - get(key) : mendapatkan nilai berdasarkan key
+            - set(key, value) : menambahkan key-value baru
+            - keys() : Mengembalikan seluruh key dalam MapIterator
+            - values() : Mengembalikan seluruh value dalam MapIterator
+      4. Set : sama seperti arr, tetapi nilai elemennya unik
+         > Method Set
+            - set.add(value) : menambahkan data baru
+            - set.delete(value) : menghapus data berdasarkan isinya
+            - set.values() : Mengembalikan seluruh value dalam bentuk setIterator obj
+            - set.has () : Mengecek ketersediaan nilai
+      5. Spread Operator : menyebarkan nilai array/iterable object dengan (...)
+         > Spread operator dapat digunakan untuk menggabungkan dua buah array ke dalam array baru
+      6. Destructuring Object 
+         > Destructuring merupakan sintaksis yang dapat mengeluarkan nilai dari array atau properties dari sebuah object ke dalam satuan yang lebih kecil.
+            - menggunakan object literal ({}) disisi kiri Asignment Operator. ex : const { firstName, lastName, age } = profile;
+            - Destructuring Assignment :  melakukan destructuring object pada variabel yang sudah dideklarasikan dan wajib menggunakan tanda kurung. ex : ({ firstName, age } = profile);
+            - Default values : menggunakan (=). ex : const { firstName, age, isMale = false } = profile;
+            - Menetapkan variabel lokal yang berbeda dengan tanda (:). ex: const { firstName: localFirstName, lastName: localLastName, age: localAge } = profile;
+      7. Destructuring Array 
+         > Sama seperti destructuring obj, tetapi menggunakan []. ex : const [firstFood, secondFood, thirdFood, fourthFood] = favorites;
+            - Destructuring Assignment. sama seperti obj namun tidak perlu tanda kurung. ex : [myFood, herFood] = favorites;
+            - Default Values. sama seperti Default value obj
+      5. Weak Map
+         > Method weakMap
+            - get()
+            - set()
+            - has()
+            - delete()
+            - size properti
+      6. Weak Set
+         > Method 
+            - add()
+            - has()
+            - delete()
