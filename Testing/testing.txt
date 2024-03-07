@@ -1,0 +1,23 @@
+JAVASCRIPT TESTING 
+    1. Pengenalan JavaScript Testin
+        > jenis-jenis pengujian dalam pengembangan perangkat lunak secara umum dapat dibagi menjadi 4 jenis pengujian, yaitu:
+            1. Static test
+                jenis-jenis pengujian dalam pengembangan perangkat lunak secara umum dapat dibagi menjadi 4 jenis pengujian, yaitu:
+            2. Unit test
+               - Dilakukan untuk memastikan bahwa setiap unit kode yang kita tulis sudah bisa bekerja sesuai harapan.
+            3. Integration test
+               - Memastikan beberapa serangkaian fungsi yang saling ketergantungan satu sama lain berjalan semestinya.
+               - Proses pengujian ini dapat dilakukan secara otomatis dengan menuliskan script test.
+            4. End-to-End test
+               - Proses pengujian sebuah aplikasi untuk menguji flow dari awal hingga akhir, layaknya seorang user saat menggunakan aplikasi
+        > Ketika kita menulis sebuah kasus pengujian (test case), maka ada beberapa poin yang harus kita definisikan terlebih dahulu:
+            1. Apa yang ingin diuji?
+               Misalkan: Melakukan uji pada fungsi menghitung rata-rata nilai siswa, atau dapat juga melakukan pengujian pada proses registrasi akun, dan lain sebagainya.
+            2. Ekspektasi apa yang diharapkan?
+               - Untuk kasus menghitung nilai rata-rata:
+                  Menghasilkan output perhitungan yang sesuai berdasarkan input yang diberikan.
+                  Input harus berupa angka.
+               -  Untuk kasus proses registrasi akun:
+                  Pengguna dapat melakukan registrasi secara normal.
+                  Pengguna dengan email sama tidak dapat melakukan registrasi.
+                  dan lain sebagainya.
