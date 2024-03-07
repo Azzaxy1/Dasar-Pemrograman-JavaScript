@@ -1,0 +1,46 @@
+ASYNCHRONOUS 
+      1. Pengenalan Asynchronous
+          > Asynchronous adalah proses menjalankan proses tanpa harus menunggu kode pada baris pertama selesai dieksekusi.
+          > Synchonous Proses yang dijalankan berdasarkan sebuah urutan dan saling menunggu
+          > ada 2 cara dalam menangani async yaitu dengan Callback dan Promise
+      2. setTimeout Function
+          > Fungsi ini menerima 2 argumen yaitu :
+            1. Argumen pertama merupakan sebuah fungsi yang akan dipanggil secara terjadwal dan asynchronous.
+            2. Argumen kedua merupakan delay waktu dalam satuan milisecond yang menentukan delay dari pemanggilan fungsi pada argumen pertama.
+      3. Asynchronous Handling dengan Callback
+          > 
+      4. Asynchronous Handling dengan Promise
+          > Promise memiliki beberapa kondisi yaitu : 
+            - Pending merupakan keadaan Promise sedang berjalan.
+            - Fulfilled merupakan keadaan Promise yang terpenuhi.
+            - Rejected merupakan keadaan Promise yang gagal terpenuhi.
+      5. Mengubah Callback Menjadi Promise dengan Promisify
+      6. Promise Berantai 
+          > 
+      7. Promise Static Method
+          > Method Static pada Promise yaitu : 
+            1.Promise.all()
+                - untuk mengeksekusi banyak Promise secara paralel.
+                - Method ini menerima sebuah array yang berisi beberapa Promise sebagai argumen
+                - Fungsi ini akan mengembalikan sebuah Promise baru dan membawa nilai yang di-resolve
+                  dalam masing-masing Promise yang diletakkan pada array argumen.
+                - ex : Promise.all([promise1, promise2, promise3]).then((values) => console.log(values));
+            2. Promise.race
+                - untuk mengeksekusi beberapa Promise secara paralel
+                - sama seperti Promise.all namun ia hanya mengembalikan nilai Promise yang paling cepat menyelesaikan eksekusinya.
+            3. Promise.allSettled
+                - mirip seperti Promise.all(). Namun, Promise.allSettled() mengembalikan seluruh hasil dari Promise yang
+                 dieksekusi dalam bentuk array of object
+            4. Promise.any
+                - mirip seperti Promise.race(), tetapi hanya mengembalikan nilai tercepat yang berstatus fulfilled.
+                - Jika seluruh Promise berstatus rejected, method ini akan mengembalikannya dengan pesan “All Promises were rejected”.
+      8. Asynchronous Handling dengan Sintaks Async dan Await
+          > Sintaks async dan await memungkinkan kita untuk menulis kode dalam menangani proses asynchronous Promise-based dengan cara yang sama seperti kode synchronous. 
+             - kita perlu mengubah sebuah fungsi agar berjalan secara asynchronous dengan menambahkan kata kunci async
+             - kita bisa mengambil data yang dihasilkan oleh Promise dengan menggunakan sintaks await
+             - setiap function yang didefinisikan dengan kata async akan selalu mengembalikan sebuah Promise
+             - Jika promise rejected bisa menggunakan "throw"
+             - Keuntungan async await :
+                1. Lebih mudah dipahami dan ditulis.
+                2. Terhindar dari callback.
+                3. Lebih mudah dalam mengelola error.
