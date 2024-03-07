@@ -1,0 +1,15 @@
+EROR HANDLING 
+    1. Try Catch
+        > Jika error ditengah maka awal kode dan catch error yang akan diambil. kode setelah eror muncul tidak akan terjadi.
+        > Didalam catch terdapat parameter berupa variabel (error) dan merupakan sebuah object yang menyimpan detail error yang terjadi. 
+           - Object error memiliki beberapa properti utama di dalamnya, yaitu:
+              1. name : Nama error yang terjadi.
+              2. message : Pesan tentang detail error.
+              3. stack : Informasi urutan kejadian yang menyebabkan error. Umumnya digunakan untuk debugging karena terdapat informasi baris mana yang menyebabkan error.
+        > Try-catch-finally
+           - Blok finally akan tetap dijalankan tanpa peduli apa pun hasil yang terjadi pada blok try-catch.
+    2. Throwing Errors
+        > throw new SyntaxError : Jika terjadi undefined agar memunculkan error.
+           - Operator ini akan “melemparkan” eror pada program, sehingga eksekusi kode akan masuk pada blok catch.
+        > Bisa mengatasi error dengan instance of dengan percabangan untuk menangani error sesuai yang kita inginkan
+    3. Custom Error
