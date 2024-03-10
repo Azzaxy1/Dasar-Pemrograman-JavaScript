@@ -46,7 +46,7 @@ OBJECT-ORIENTED PROGRAMMING
     5. Overriding
          > fitur yang memperbolehkan subclass mendefinisikan implementasinya sendiri pada sebuah method yang sebenarnya sudah didefinisikan pada superclass-nya.
          > Constructor Overriding
-            - method super() : memanggil constructor superclass
+            - method super() : memanggil constructor/function/method superclass/parent
          > Method Overriding
     6. Object Composition
     7. Built-in Class
@@ -56,4 +56,11 @@ OBJECT-ORIENTED PROGRAMMING
          4. Math
          5. String
          6. Number
+
+    // VIDEO
+    8. Hoisting 
+        > Akan terjadi error jika membuat instance sebelum deklarasi class
+    9. Field 
+        > Sama seperti properti dalam class namun dideklarasikan tanpa this
+           - Jika private maka pakai #
 

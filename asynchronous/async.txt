@@ -8,7 +8,7 @@ ASYNCHRONOUS
             1. Argumen pertama merupakan sebuah fungsi yang akan dipanggil secara terjadwal dan asynchronous.
             2. Argumen kedua merupakan delay waktu dalam satuan milisecond yang menentukan delay dari pemanggilan fungsi pada argumen pertama.
       3. Asynchronous Handling dengan Callback
-          > 
+          >  Callback merupakan sebuah fungsi yang disisipkan pada argumen fungsi asynchronous dan akan dipanggil ketika proses dinyatakan selesai. 
       4. Asynchronous Handling dengan Promise
           > Promise memiliki beberapa kondisi yaitu : 
             - Pending merupakan keadaan Promise sedang berjalan.
@@ -44,3 +44,13 @@ ASYNCHRONOUS
                 1. Lebih mudah dipahami dan ditulis.
                 2. Terhindar dari callback.
                 3. Lebih mudah dalam mengelola error.
+
+
+   VIDEO 
+        1. Concurrency dan Paralelism
+            - Concurrency adalah mengerjakan sesuatu secara bersamaan/beriringan
+            - Paralelism adalah membagi tugas secara bersamaan
+        2. Promise
+            > Ketika membuat promise usahakan didalamnya diterapkan try catch untuk meminimalisir terjadinya async tanpa berhenti dan catch diisi reject(error)
+              - Ketika data besar gunakanlah Promise
+              - ketika error di then maka bisa menambahkan error parameter setelah parameter then 

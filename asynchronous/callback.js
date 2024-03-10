@@ -1,9 +1,8 @@
-function getUsers(isOffline, callback) {
-  // simulate network delay
+function getUsers(err, callback) {
   setTimeout(() => {
     const users = ["John", "Jack", "Abigail"];
 
-    if (isOffline) {
+    if (err) {
       callback(new Error("cannot retrieve users due offline"), null);
       return;
     }
@@ -12,13 +11,13 @@ function getUsers(isOffline, callback) {
   }, 3000);
 }
 
-// function usersCallback(error, users) {
-//   if (error) {
-//     console.log("process failed:", error.message);
-//     return;
-//   }
-//   console.log("process success:", users);
-// }
+const usersCallback = (err, users) => {
+  if (err) {
+    console.log("proccess failed: ", err.message);
+    return;
+  }
+  console.log("Process sucess", users);
+};
 
-// getUsers(false, usersCallback); // process success: ['John', 'Jack', 'Abigail']
-// getUsers(true, usersCallback); // process failed: cannot retrieve users due offline
+getUsers(false, usersCallback);
+getUsers(true, usersCallback);

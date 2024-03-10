@@ -1,7 +1,12 @@
 FUNCTIONAL PROGRAMMING
     1. Paradigma Functional Programming
         > Gaya Imperatif
+          - Developer menentukan langkah langkah secara sistematis untuk komputer
+            sehingga dapat mencapai tujuannya
         > Gaya deklaratif
+          - Menyediakan kepada komputer sebuah aliran fungsi sebagai solusi terhadap 
+            suatu masalah untuk menyelesaikan tujuannya
+
     2. Konsep-Konsep Functional Programming
         1. Pure Function 
             - fungsi yang tidak boleh bergantung terhadap nilai yang berada di luar fungsi atau parameternya
